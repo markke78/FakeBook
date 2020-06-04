@@ -1,0 +1,32 @@
+{
+  "name": "fakebook",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "v14.3.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "cd server && npm start",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix src && npm run build --prefix src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zapfly/Duck-labs-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zapfly/Duck-labs-project/issues"
+  },
+  "homepage": "https://github.com/Zapfly/Duck-labs-project#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.2.0"
+  },
+  "type": "module"
+}

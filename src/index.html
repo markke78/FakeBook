@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAKEbook</title>
+    <link rel='stylesheet' href='./index.css'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">    
+    <script type='text/javascript' src="scripts/jquery.js" ></script>
+    <script type='text/javascript' src="scripts/index.js" ></script>
+    <script type='text/javascript' src="scripts/comments.js"></script>
+    
+
+<body>
+    <header>
+        <img class="fakebook-logo" src="./FAKEbook.png" alt="Fakebook Logo" />
+        <div id=searchBarContainer>
+            <input class='search-bar under-construction' placeholder='search bar under construction'>
+        </div>
+        <div id="profile-info" class="login-area"> 
+            <input id='loginEmailInput' type="text" placeholder="Email" value="example@gmail.com" />
+            <input id='loginPassInput'  type="text" placeholder="Password" value="123456"/>
+            <button id="postButton" onClick="loginButtonPressed()">Log in</button> 
+            
+            <img src="" class="profile-thumbnail under-construction" />
+        </div>
+    </header>
+
+    <div class='create-user-area'>
+            <input id='createUserInput'  type="text" placeholder="Username" value="testName"/>
+            <input id='createPassInput'  type="text" placeholder="Password" value="testPassword"/>
+            <input id='createEmailInput' type="text" placeholder="Email" value="testEmail@gmail.com"/>
+            <button onclick="createUserButtonPressed()">Sign Up</button>         
+    </div>
+
+    <div class="status-input card">
+        <span>Create Post</span>
+        <img class='profile-thumbnail' src="" />
+        <!-- <div class="create-status-text">Create Status</div>          -->
+        <input id='statusInputField'  type="text" placeholder="What's on your mind?" onkeypress="pressEnterKey('statusInputField', postButtonPressed)"/>
+        <div class="button-container"> 
+                <button id="postButton" onClick="postButtonPressed()">Post</button> 
+                <button class='button-with-image under-construction' id='fileUploadButton'>&#128248;
+                    Photo/Video
+                </button> 
+        </div>
+    </div>
+    <div id="newsFeed">
+        <!-- posts will go here-->
+    </div>
+    <div> <button id="clearFeedButton" onClick='clearNewsFeedButtonPressed()'>Clear News Feed</button>   
+</body>
+</html>
